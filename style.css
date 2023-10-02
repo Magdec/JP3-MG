@@ -1,0 +1,148 @@
+body{
+    background-color: lightgrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    height: fit-content;
+    background-color: aquamarine;
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px;
+    color: crimson;
+    font-size: 20pt;
+}
+
+h1{
+    margin: auto;
+}
+
+img{
+    width: 20%;
+    height: fit-content ;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box{
+    font-size: 15pt;
+    min-width: 35%;
+    width: auto;
+    height: fit-content;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 30px;
+    border : 8px solid crimson;
+    margin: auto;
+}
+
+strong{
+    text-decoration: underline;
+}
+
+caption{
+    color: darkgoldenrod;
+}
+
+table{
+    width: 150%;
+    margin: 20px;
+}
+
+td{
+    background-color: white;
+    text-align: center;
+    border: 3px solid goldenrod;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+table, th {
+    background-color: white;
+    border-collapse: separate;
+    text-align: center;
+    border: 3px solid goldenrod;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    text-decoration: underline;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width: 420px) {
+    header{
+        font-size: 15pt;
+    }
+   
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    img{
+        width: 80%;
+        margin: auto;
+    }
+    .box{
+        font-size: 10pt;
+        border : 5px solid crimson;
+    }
+    table{
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 420px) {
+    header {
+        font-size: 1em;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    img{
+        width: 80%;
+        margin: auto
+    }
+    .box{
+        font-size: 0.9rem;
+        border : 3px solid crimson;
+    }
+    table{
+        font-size: 0.9rem;
+        margin: auto;
+    }
+    td font, tr font {
+        font-size: 0.5rem;
+    }
+    footer{
+        font-size: 1rem;
+    }
+}
